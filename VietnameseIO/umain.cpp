@@ -3,7 +3,7 @@
 #include <io.h>    //_setmode()
 #include <string>
 
-int main()
+int wmain(int argc, wchar_t* argv[])
 {
     _setmode(_fileno(stdout), _O_U16TEXT); //needed for output
     _setmode(_fileno(stdin), _O_U16TEXT);  //needed for input
