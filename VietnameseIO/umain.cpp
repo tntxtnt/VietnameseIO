@@ -1,12 +1,12 @@
 ﻿#include <iostream>
-#include <fcntl.h> //_O_U16TEXT
+#include <fcntl.h> //_O_WTEXT
 #include <io.h>    //_setmode()
 #include <string>
 
 int wmain(int argc, wchar_t* argv[])
 {
-    _setmode(_fileno(stdout), _O_U16TEXT); //needed for output
-    _setmode(_fileno(stdin), _O_U16TEXT);  //needed for input
+    _setmode(_fileno(stdout), _O_WTEXT); //needed for output
+    _setmode(_fileno(stdin),  _O_WTEXT); //needed for input
     // nhớ chuyển font của console sang Consolas (size 16)
 
     std::wcout << L"Chương trình đọc và xuất chuỗi tiếng Việt\n\n"
