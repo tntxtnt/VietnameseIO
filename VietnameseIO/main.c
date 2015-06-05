@@ -1,4 +1,6 @@
 ﻿/*
+ * encoding: UTF-8 with BOM
+ *
  * ISSUE: Really weird bug at fgetws() with stdin, doesn't read the newline character
  *        => getwc(stdin) to ignore it. 
  */
